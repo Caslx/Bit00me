@@ -1,0 +1,132 @@
+body {
+  /* Typography Declarations */
+color: #000000;
+font-size: 1em;
+font-family: "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.masthead-intro,
+.masthead-heading,
+.content-footer {
+text-align: center; /*Centers text horizontally*/
+}
+
+.masthead {
+border-top: solid 0.4em #3E3E40;
+padding: 3em 0; /*Centers text vertically*/
+background: url(images/1.jpg);
+background-repeat: no-repeat;
+background-position: 50%;
+
+}
+
+.masthead-intro {
+margin-bottom: 0.1em;
+color: #000000;
+font-family: "Gentium Book Basic", Georgia, serif;
+font-size: 2em;
+text-shadow: 1px 1px #57b9bd;
+}
+
+.masthead-heading {
+margin-top: -0.2em;
+color: #000000;
+font-family: "Open Sans", "Helvetica Neue", sans-serif;
+font-weight: bold;
+font-size: 6em;
+letter-spacing: -0.02em;
+text-transform: uppercase;
+text-shadow: 1.5px 4px  #57b9bd;
+}
+
+.introduction,
+.location,
+.questions {
+max-width: 38em;
+margin-left: auto;
+margin-right: auto;
+margin-top: 2em;
+}
+
+.introduction,
+.location,
+.questions,
+.content-footer p {
+font-weight: light;
+}
+
+.questions h2 {
+font-size: 1em;
+font-family: "Gentium Book Basic", Georgia, serif;
+color: #57b9bd;
+}
+
+.questions a {
+text-decoration: none;
+color: #57b9bd;
+}
+
+.content-footer {
+background-color: #BF9381;
+margin-top: 3em;
+padding: 2em;
+color: #57b9bdA;
+}
+
+.content-footer a {
+text-decoration: none;
+color: #C9619E;
+font-weight: bold;
+}
+
+.content-footer span {
+color: #57b9bd;
+}
+
+.social {
+padding: 0;
+/*The links refused to center themselves without this!*/
+}
+.interests-list {
+  list-style-type: none;
+  padding-left: 1.5em;
+}
+
+.interests-list li::before {
+  content: "•";
+  color: cyan;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1.5em;
+}
+
+
+.social > li {
+display: inline-block;
+padding: 0.3em;
+}
+
+
+@media only screen and (max-width: 500px) {
+  .masthead {
+      padding: 3em 0;
+  }
+
+  .masthead-heading {
+      font-size: 3em;
+  }
+
+  .content-footer {
+    margin-top: 2em;
+    padding: 0.5em;
+  }
+
+  .masthead-intro,
+  .masthead-heading,
+  .content-footer,
+  .introduction,
+  .location,
+  .questions {
+    text-align: center; /*Centers text horizontally*/
+  }
+}
